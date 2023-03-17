@@ -1,7 +1,7 @@
 .btn {
   &:link,
   &:visited {
-    font-size: 1.6rem;
+    font-size: $defaul-font-size;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
@@ -62,5 +62,31 @@
           The animation-fill-mode property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both). CSS animations do not affect the element before the first keyframe is played or after the last keyframe is played. The animation-fill-mode property can override this behavior. 
         */
     animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $defaul-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    border-radius: 5px;
+    padding: 3px 10px;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    transform: translateY(0);
   }
 }
