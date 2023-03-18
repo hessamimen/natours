@@ -1,7 +1,7 @@
 .btn {
   &:link,
   &:visited {
-    font-size: $defaul-font-size;
+    font-size: $default-font-size;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
@@ -76,7 +76,7 @@
 .btn-text {
   &:link,
   &:visited {
-    font-size: $defaul-font-size;
+    font-size: $default-font-size;
     color: $color-primary;
     display: inline-block;
     text-decoration: none;
