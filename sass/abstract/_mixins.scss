@@ -20,6 +20,9 @@
 1200-1800PX   NORMAL STYLES(DESKTOP FIRST APPROACH)
 1800PX +      BIG DESKTOP 
 */
+
+// ORDER: Base + Typograpgy > general layout + grid > page layout > components
+
 @mixin respond-phone {
   @media (max-width: 600px) {
     @content;
